@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Register">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/progress_tab_activity_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1C6320"
+        android:gravity="center"
+        android:padding="2dp">
+        <ProgressBar
+            android:id="@+id/progress_tab_indeterminate_bar_activity_register"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="#ffffff"/>
+
+        <TextView
+            android:id="@+id/progress_tab_indeterminate_text_activity_register"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="progress text"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/register_activity_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_button_activity_register"
+            android:layout_margin="24dp"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#4B722B"
+            android:layout_gravity="center|bottom"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/fragment_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reg_left_shift"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#4B722B"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="24dp"
+            android:layout_gravity="left|bottom">
+            <ImageView
+                android:backgroundTint="#00FF0A"
+                android:id="@+id/left_arrow_green"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_left_arrow"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/left_arrow_gray"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ic_left_arrow"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reg_right_shift"
+            android:backgroundTint="#4B722B"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="24dp"
+            android:layout_gravity="right|bottom">
+            <ImageView
+                android:id="@+id/right_arrow_gray"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/ic_right_arrow"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/right_arrow_green"
+                android:backgroundTint="#00FF08"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/ic_right_arrow"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/alert_builder_style"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#4E4E4E"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="#4E4E4E" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="4dp"
+            android:src="@drawable/ic_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Edit Profile"
+            android:textColor="#4E4E4E"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#4E4E4E" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="4dp"
+            android:src="@drawable/ic_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Log Out"
+            android:textColor="#4E4E4E"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#4E4E4E" />
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_map"
+        android:title="Map"
+        android:icon="@drawable/ic_map"
+        android:iconTint="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_ask"
+        android:title="Ask"
+        android:icon="@drawable/ic_ask"
+        android:iconTint="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_blog"
+        android:title="Blog"
+        android:icon="@drawable/ic_blog"
+        android:iconTint="#FFFFFF"
+        android:checked="true"/>
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"
+        android:iconTint="#FFFFFF"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        android:iconTint="#FFFFFF"/>
+</menu>

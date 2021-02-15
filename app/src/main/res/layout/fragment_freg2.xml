@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Fragments.FReg2">
+
+
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/expandable_box_layout"
+        android:backgroundTint="#AADF6F">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Avatar"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textColor="#494949"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/expandable_box_layout"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profile_avatar_update"
+            android:src="@drawable/report_default_image_bg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <Button
+            android:id="@+id/profile_avatar_update_button"
+            android:layout_marginHorizontal="48dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="UPLOAD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</LinearLayout>

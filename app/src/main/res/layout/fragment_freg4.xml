@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragments.FReg4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/expandable_box_layout"
+            android:backgroundTint="#AADF6F">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Practitioner / NGO"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:textColor="#494949"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/expandable_box_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingHorizontal="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="30dp"
+                android:text="Are you from Veterinary??"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/expert_toggle_listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorBorder="@color/colorPrimaryDark"
+                app:textOn="Yes"
+                app:textOff="No"
+                app:colorOn="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expert_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/hospital_name_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Hospital Name"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hospital_name_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/hospital_country_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Country"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hospital_country_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/hospital_state_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="State"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hospital_state_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/hospital_pin_code_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Pin Code"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/hospital_pin_code_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:paddingHorizontal="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="30dp"
+                    android:text="Ambulance Facility?"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/hospital_ambulance_facility_listener"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorBorder="@color/colorPrimaryDark"
+                    app:textOn="Yes"
+                    app:textOff="No"
+                    app:colorOn="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/hospital_proof_id"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/report_default_image_bg"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/hospital_proof_id_upload_button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Upload ID"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/expandable_box_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingHorizontal="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="30dp"
+                android:text="Are you from NGO?"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/ngo_toggle_listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:colorBorder="@color/colorPrimaryDark"
+                app:textOn="Yes"
+                app:textOff="No"
+                app:colorOn="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ngo_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ngo_name_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="NGO Name"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ngo_name_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ngo_country_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Country"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ngo_country_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ngo_state_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="State"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ngo_state_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ngo_pin_code_update"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Pin Code"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ngo_pin_code_update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:paddingHorizontal="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="30dp"
+                    android:text="Ambulance Facility?"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/ngo_ambulance_facility_listener"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorBorder="@color/colorPrimaryDark"
+                    app:textOn="Yes"
+                    app:textOff="No"
+                    app:colorOn="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ngo_proof_id"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/report_default_image_bg"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/ngo_proof_id_upload_button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Upload Proof [ID image]"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
